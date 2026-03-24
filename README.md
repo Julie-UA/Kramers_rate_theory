@@ -37,7 +37,8 @@ Fill these values in the designated cells in the excel files.
 ## Calculation of the survival function using a Smoluchowski equation solved
 The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg).
 
-> smol_solver pmf.dat $xmin $xmax $bc $dx $dt $nsteps
+Adapt the values required in the scripts and run it: 
+> ./run.sh
 
 Paste the values of the four data files in the designated tab in the excel file. 
 
