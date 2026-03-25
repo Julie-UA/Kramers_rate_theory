@@ -5,14 +5,14 @@ Step-by-step desciption to reweight ligand binding kinetics from enhanced sampli
 ## PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
 A toolkit of python scripts "PyReweighting" is provided to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations. 
 
-Modify the Reweight_1D.sh script:
+Modify the (No_)Reweight_1D.sh script:
   - path of gamd.log file (line 6)
   - path of trajectory file (line 7)
   - path to reweight.py script (line 11)
   - path of prmtop file (line 12)
   - set RESID of ligand molecule (line 13)
 
-Modify the reweight.py script:
+Modify the (no_)reweight.py script:
   - set path to call cpptraj (line 16)
   - Section Calculate distance with cpptraj (line 297)
       - adapt resid protein to get distance between COM ligand and COM active site 
@@ -24,7 +24,7 @@ For each run do:
 < pmf-c2-tmp.txt.xvg
 
 and 
-> python PyReweighting-1D.py -input tmp.txt -T 300 -cutoff 75 -Xdim %d %d -disc 1 -Emax 20 -job noweight -weight processed.gamd.txt
+> ./No_Reweight_1D.sh 
 
 < pmf-c2-tmp.txt.xvg
 
