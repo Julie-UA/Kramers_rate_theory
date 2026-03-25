@@ -39,14 +39,9 @@ Fill your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9
 
 > python second_der_reweighted.py
 
-<img width="349" height="88" alt="image" src="https://github.com/user-attachments/assets/d2ad02f7-9c04-458c-9814-663aeee21c32" />
-
-
 > python second_der_unreweighted.py
 
-<img width="345" height="81" alt="image" src="https://github.com/user-attachments/assets/5d43df5b-044b-42f3-bcaf-8f0691d481e5" />
-
-Fill these values in the designated cells (M4:R4 & M5:R5) in the excel files.
+Fill the obtained values in the designated cells (M4:R4 & M5:R5) in the excel files.
 
 ## Calculation of the survival function using a Smoluchowski equation solver
 The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg). https://github.com/MiaoLab20/smol_solver
