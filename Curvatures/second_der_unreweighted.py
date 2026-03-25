@@ -63,8 +63,8 @@ omega_u,  sigma_u  = freq_and_error(k_u,  sk_u)
 # OUTPUT
 # -----------------------------
 print("\n===== FREQUENCIES & ERRORS =====")
-print(f"ω_b   = {omega_b:.6f}  ± {sigma_b:.6f}")
-print(f"ω_br  = {omega_br:.6f} ± {sigma_br:.6f}")
-print(f"ω_u   = {omega_u:.6f}  ± {sigma_u:.6f}")
+print(f"ω*_b   = {omega_b:.6f}  ± {sigma_b:.6f}")
+print(f"ω*_br  = {omega_br:.6f} ± {sigma_br:.6f}")
+print(f"ω*_u   = {omega_u:.6f}  ± {sigma_u:.6f}")
 
 
