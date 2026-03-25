@@ -3,7 +3,7 @@
 Step-by-step desciption to reweight ligand binding kinetics from enhanced sampling molecular dynamics simulations (MD) using Kramers' rate theory. This workflow is applied on the output of LiGaMD simulations on the Trypsin_Benzamidine complex.
 
 ## PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-A toolkit of python scripts "PyReweighting" is provided to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations. 
+A toolkit of python scripts "PyReweighting" is provided to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  https://github.com/MiaoLab20/pyreweighting/tree/main
 
 Modify the (No_)Reweight_1D.sh script:
   - path of gamd.log file (line 6)
@@ -51,7 +51,7 @@ Fill with your data for the reaction coordinate, PMF values and STD (lines 7, 8 
 Fill these values in the designated cells (M4:R4 & M5:R5) in the excel files.
 
 ## Calculation of the survival function using a Smoluchowski equation solver
-The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg).
+The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg). https://github.com/MiaoLab20/smol_solver
 
 Compile:
 > ./make.sh
