@@ -26,7 +26,7 @@ For each run do:
 and 
 > ./No_Reweight_1D.sh 
 
-< pmf-c2-tmp.txt.xvg
+< pmf-tmp.txt.xvg
 
 plot reweighted PMF's
 
