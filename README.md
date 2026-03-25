@@ -50,13 +50,31 @@ Fill with your data for the reaction coordinate, PMF values and STD (lines 7, 8 
 
 Fill these values in the designated cells (M4:R4 & M5:R5) in the excel files.
 
-## Calculation of the survival function using a Smoluchowski equation solved
+## Calculation of the survival function using a Smoluchowski equation solver
 The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg).
 
-Adapt the values required in the scripts and run it: 
+Compile:
+> ./make.sh
+
+Prepare the data-pmf-1D-dist-lig-host-Tryp-BEN.dat file. This file should contain 6 columns with folowwing header:
+
+#RC	PMF(kcal/mol)	STDEV	#RC	PMF(kcal/mol)	STDEV
+
+LiGaMD_Dual_reweight		STDEV	LiGaMD_Dual_no_reweight		STDEV
+
+
+Adapt the values (lines 3, 4, 5, 7, 8, 12, 13, 20, and 21)  required in the script and run it: 
 > ./run.sh
 
-Paste the values of the four data files in the designated tab in the excel file. 
+< St_smol-Tryp-BEN-igamd11-reweightedno-binding.dat
+
+< St_smol-Tryp-BEN-igamd11-reweightedno-unbinding.dat
+
+< St_smol-Tryp-BEN-igamd11-reweightedyes-binding.dat
+
+< St_smol-Tryp-BEN-igamd11-reweightedyes-unbinding.dat
+
+Paste the values of the four data files in the designated columns in the Smol tab in the excel file. 
 
 
 # Citations
