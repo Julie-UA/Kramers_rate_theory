@@ -28,24 +28,27 @@ and
 
 < pmf-tmp.txt.xvg
 
-plot reweighted PMF's
+Plot the reweighted PMF's
 
 Based on analysis take average and standard deviation of un- and reweighted simulation PMF's and plot these. 
 Identify the reaction coordinate of the bound and unbound state as well as of the barrier.
-Fill these values and coresponding PMF value in the designated cells in the excel files.
+Fill these values and coresponding PMF and STD value in the designated cells in the excel files:
+  - Tab Kramers' rate theory cells B2:B7 & D2:D7 & F2:F7
 
 
 ## Curvatures of the PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-Change the data and indexes of the reaction coordinates in both scripts and run these.
-> python second_der.py
+Fill with your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9) for the un- and reweighted values in the respective scripts. Specify the indexes of the reaction coordinates (lines 15, 18, 21) in both scripts and run these.
 
-<img width="386" height="90" alt="image" src="https://github.com/user-attachments/assets/5156934f-1d12-4c1d-83f8-4c4a6069ffcb" />
+> python second_der_reweighted.py
 
-> python second_der_mod.py
+<img width="349" height="88" alt="image" src="https://github.com/user-attachments/assets/d2ad02f7-9c04-458c-9814-663aeee21c32" />
 
-<img width="386" height="90" alt="image" src="https://github.com/user-attachments/assets/5156934f-1d12-4c1d-83f8-4c4a6069ffcb" />
 
-Fill these values in the designated cells in the excel files.
+> python second_der_unreweighted.py
+
+<img width="345" height="81" alt="image" src="https://github.com/user-attachments/assets/5d43df5b-044b-42f3-bcaf-8f0691d481e5" />
+
+Fill these values in the designated cells (M4:R4 & M5:R5) in the excel files.
 
 ## Calculation of the survival function using a Smoluchowski equation solved
 The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg).
