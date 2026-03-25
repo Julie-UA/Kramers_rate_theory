@@ -15,7 +15,7 @@ i_b = 3
 i_br = 5
 
 # --- 3) Unbound index: near) ---
-i_u=9
+i_u = 9
 
 # --- Derivatives (handle
 F_prime  = np.gradient(F, A)
