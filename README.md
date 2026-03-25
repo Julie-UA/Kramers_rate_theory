@@ -3,16 +3,16 @@
 Step-by-step desciption to reweight ligand binding kinetics from enhanced sampling molecular dynamics simulations (MD) using Kramers' rate theory. This workflow is applied on the output of LiGaMD simulations on the Trypsin_Benzamidine complex.
 
 ## PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-A toolkit of python scripts "PyReweighting" is provided to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  https://github.com/MiaoLab20/pyreweighting/tree/main
+A toolkit of python scripts "PyReweighting" is used to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  This script is provided by Miao, Y, et al. https://github.com/MiaoLab20/pyreweighting/tree/main
 
-Modify the (No_)Reweight_1D.sh script:
+Modify the (No_)Reweight_1D.sh scripts:
   - path of gamd.log file (line 6)
   - path of trajectory file (line 7)
   - path to reweight.py script (line 11)
   - path of prmtop file (line 12)
   - set RESID of ligand molecule (line 13)
 
-Modify the (no_)reweight.py script:
+Modify the (no_)reweight.py scripts:
   - set path to call cpptraj (line 16)
   - Section Calculate distance with cpptraj (line 297)
       - adapt resid protein to get distance between COM ligand and COM active site 
@@ -30,14 +30,12 @@ and
 
 Plot the reweighted PMF's
 
-Based on analysis take average and standard deviation of un- and reweighted simulation PMF's and plot these. 
-Identify the reaction coordinate of the bound and unbound state as well as of the barrier.
-Fill these values and coresponding PMF and STD value in the designated cells in the excel files:
+Based on analysis take average and standard deviation of the useable un- and reweighted simulation PMF's and plot these (Tabs PMF_reweighted and PMF_no_reweighted). For the determination of the useable PMF's please refer to the education tutorial article. Identify the reaction coordinate of the bound and unbound state as well as of the barrier. Fill these values and coresponding PMF and STD value in the designated cells in the excel files:
   - Tab Kramers' rate theory cells B2:B7 & D2:D7 & F2:F7
 
 
 ## Curvatures of the PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-Fill with your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9) for the un- and reweighted values in the respective scripts. Specify the indexes of the reaction coordinates (lines 15, 18, 21) in both scripts and run these.
+Fill your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9) for the un- and reweighted values in the respective scripts. Specify the indexes of the reaction coordinates (lines 15, 18, 21) in both scripts and run these.
 
 > python second_der_reweighted.py
 
@@ -76,11 +74,16 @@ Adapt the values (lines 3, 4, 5, 7, 8, 12, 13, 20, and 21)  required in the scri
 
 Paste the values of the four data files in the designated columns in the Smol tab in the excel file. 
 
+## Kramers' acceleration rates and reweighted ligand binding kinetics 
+All Kramers' rate constants, acceleration rates and reweighted ligand binding kinetics are automatically calculated in the excel file. In addition the kD and binding free energy is calculated. For the explenation how these terms are computed please refer to the education tutorial article.
 
 # Citations
 https://github.com/MiaoLab20/pyreweighting/tree/main
 
 https://github.com/MiaoLab20/smol_solver
+
+# Notes
+It is important to not move cells in the excel file. Doing so will lead to incorrect implementation of the formulas.
 
 
 
