@@ -172,12 +172,12 @@ omega_u,  sigma_u  = freq_and_error(k_u,  sk_u)
 # -----------------------------
 # OUTPUT
 # -----------------------------
-print("\n===== CURVATURES & ERRORS =====")
+print("\n===== SECOND DERIVATIVE & ERRORS =====")
 print(f"Bound (i={i_b}):    F'' = {k_b:.6f} ± {sk_b:.6f}")
 print(f"Barrier (i={i_br}): F'' = {k_br:.6f} ± {sk_br:.6f}")
 print(f"Unbound (i={i_u}):  F'' = {k_u:.6f} ± {sk_u:.6f}")
 
-print("\n===== FREQUENCIES & ERRORS =====")
+print("\n===== CURVATURES & ERRORS =====")
 print(f"ω*_b   = {omega_b:.6f}  ± {sigma_b:.6f}")
 print(f"ω*_br  = {omega_br:.6f} ± {sigma_br:.6f}")
 print(f"ω*_u   = {omega_u:.6f}  ± {sigma_u:.6f}")
