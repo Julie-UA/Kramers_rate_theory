@@ -12,9 +12,6 @@ try:
 except Exception:
     _HAVE_SCIPY = False
 
-
-
-
 VERSION = "1.0"
 CPPTRAJ = "cpptraj" #"/usr/local/amber24/bin/cpptraj"
 
