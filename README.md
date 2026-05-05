@@ -78,6 +78,8 @@ https://github.com/MiaoLab20/pyreweighting/tree/main
 
 https://github.com/MiaoLab20/smol_solver
 
+Educational tutorial article pending publication.
+
 # Notes
 It is important to not move cells in the excel file. Doing so will lead to incorrect implementation of the formulas.
 
