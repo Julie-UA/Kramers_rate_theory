@@ -44,7 +44,7 @@ Fill your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9
 Fill the obtained values in the designated cells (M4:R4 & M5:R5) in the excel files.
 
 ## Calculation of the survival function using a Smoluchowski equation solver
-The survival function ln[S(t)] can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg). https://github.com/MiaoLab20/smol_solver
+The survival function S(t) can be obtained using a Smoluchowski equation solver coded in C++ (“smol_solver” shared by Prof. Donald Hamelberg). https://github.com/MiaoLab20/smol_solver
 
 Compile:
 > ./make.sh
