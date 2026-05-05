@@ -1,9 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # --- Data ---
-
 A = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47]) 
 F = np.array([2.57657265943638000,
 4.77601056995759000, 
@@ -116,7 +114,6 @@ STD_second = np.zeros(len(A))
 a =  1 / dA**2
 b = -2 / dA**2
 c =  1 / dA**2
-
 
 for i in range(1, len(F)-1):
     STD_second[i] = np.sqrt(
