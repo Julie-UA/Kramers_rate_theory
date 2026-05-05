@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 # --- Data ---
 A = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47]) 
 F = np.array([3.51738596760535000,
@@ -105,18 +104,7 @@ F_second = np.gradient(F_prime, A)
 
 dA = A[1] - A[0]
 
-print(F_second)
-
-# Plot
-plt.figure(figsize=(8,4))
-plt.plot(A, F, label='F(A)')
-plt.plot(A, F_second, label='F"(A)')
-plt.xlabel("A")
-plt.ylabel("Value")
-plt.legend()
-plt.title("Free Energy and Its Second Derivative")
-plt.show()
-
+#print(F_second)
 
 # -----------------------------
 # ERROR PROPAGATION FOR F''(A)
@@ -136,7 +124,7 @@ for i in range(1, len(F)-1):
 
 # --- 1) Bound (well) index: global minimum of F ---
 i_b = int(np.argmin(F))  # bound state (minimum)
-print('i_b =', i_b)
+#print('i_b =', i_b)
 
 # --- 2) Barrier index: pick the tallest interior local maximum ---
 #local_maxima = [i for i in range(1, len(F)-1) if F[i] > F[i-1] and F[i] > F[i+1]]
@@ -148,13 +136,13 @@ print('i_b =', i_b)
 #    if i_br == 0: i_br = 1
 #    if i_br == len(F)-1: i_br = len(F)-2
 i_br = 5
-print('i_br =', i_br)
+#print('i_br =', i_br)
 
 
 # --- 3) Unbound index: nearest to the given F value (your choice) ---
 #i_u = int(np.argmin(np.abs(F - 0.581894901)))
 i_u=9
-print('i_u =', i_u)
+#print('i_u =', i_u)
 
 
 # -----------------------------
@@ -190,9 +178,9 @@ print(f"Barrier (i={i_br}): F'' = {k_br:.6f} ± {sk_br:.6f}")
 print(f"Unbound (i={i_u}):  F'' = {k_u:.6f} ± {sk_u:.6f}")
 
 print("\n===== FREQUENCIES & ERRORS =====")
-print(f"ω_b   = {omega_b:.6f}  ± {sigma_b:.6f}")
-print(f"ω_br  = {omega_br:.6f} ± {sigma_br:.6f}")
-print(f"ω_u   = {omega_u:.6f}  ± {sigma_u:.6f}")
+print(f"ω*_b   = {omega_b:.6f}  ± {sigma_b:.6f}")
+print(f"ω*_br  = {omega_br:.6f} ± {sigma_br:.6f}")
+print(f"ω*_u   = {omega_u:.6f}  ± {sigma_u:.6f}")
 
 
 # -----------------------------
