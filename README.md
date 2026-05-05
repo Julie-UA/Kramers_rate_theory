@@ -5,7 +5,7 @@ Step-by-step desciption to reweight ligand binding kinetics from enhanced sampli
 ## PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
 A toolkit of python scripts "PyReweighting" is used to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  This script is provided by Miao, Y., et al. https://github.com/MiaoLab20/pyreweighting/tree/main. We auto;ated several steps using a shell script:
 
-Modify the (No_)Reweight_1D.sh scripts:
+Modify the (no_)reweight_1D.sh scripts:
   - path of gamd.log file (line 6)
   - path of trajectory file (line 7)
   - path to reweight.py script (line 11)
