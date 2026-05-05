@@ -20,12 +20,12 @@ Modify the (no_)reweight.py scripts:
 
 For each run do: 
 
-> ./Reweight_1D.sh 
+> ./reweight_1D.sh 
 
 < pmf-c2-tmp.txt.xvg
 
 and 
-> ./No_Reweight_1D.sh 
+> ./no_reweight_1D.sh 
 
 < pmf-tmp.txt.xvg
 
