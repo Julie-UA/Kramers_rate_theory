@@ -105,7 +105,7 @@ STD = np.array([3.64382399941464000,
 # -----------------------------
 F_prime  = np.gradient(F, A)
 F_second = np.gradient(F_prime, A)
-print(F_second)
+#print(F_second)
 dA = A[1] - A[0]
 
 # -----------------------------
@@ -127,7 +127,7 @@ for i in range(1, len(F)-1):
 
 # --- 1) Bound (well) index: global minimum of F ---
 i_b = int(np.argmin(F))  # bound state (minimum)
-print('i_b =', i_b)
+#print('i_b =', i_b)
 
 # --- 2) Barrier index: pick the tallest interior local maximum ---
 #local_maxima = [i for i in range(1, len(F)-1) if F[i] > F[i-1] and F[i] > F[i+1]]
@@ -139,13 +139,13 @@ print('i_b =', i_b)
 #    if i_br == 0: i_br = 1
 #    if i_br == len(F)-1: i_br = len(F)-2
 i_br = 7
-print('i_br =', i_br)
+#print('i_br =', i_br)
 
 
 # --- 3) Unbound index: nearest to the given F value (your choice) ---
 #i_u = int(np.argmin(np.abs(F - 0.581894901)))
 i_u = 10
-print('i_u =', i_u)
+#print('i_u =', i_u)
 
 # -----------------------------
 # CURVATURES + ERRORS
