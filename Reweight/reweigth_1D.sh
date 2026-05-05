@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Identify hotspot
+
 rm blindspotter-boostfiles.dat
 rm blindspotter-trajectories.dat
 
