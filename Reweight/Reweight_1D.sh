@@ -8,7 +8,7 @@ echo "/home/julie/Desktop/LiGaMD_Prod_tryp_ben/Prod_restraint_E_change_11-1/NPT_
 
 
 
-/home/julie/Desktop/LiGaMD_Prod_tryp_ben/Prod_restraint_E_change_11-1/Test_github/Reweight/reweight.py \
+/home/julie/Desktop/LiGaMD_Prod_tryp_ben/Prod_restraint_E_change_11-1/Reweight/reweight.py \
 	--parm ../../../complex.stripped.prmtop \
 	--ligand 225 \
 	--trajectories trajectories.dat \
