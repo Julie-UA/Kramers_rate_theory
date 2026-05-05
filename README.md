@@ -80,6 +80,7 @@ https://github.com/MiaoLab20/smol_solver
 
 # Notes
 It is important to not move cells in the excel file. Doing so will lead to incorrect implementation of the formulas.
+The trajectory files of the production are avaible upon request due to large size.
 
 
 
