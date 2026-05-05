@@ -35,7 +35,7 @@ Based on analysis take average and standard deviation of the useable un- and rew
 
 
 ## Curvatures of the PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-Fill your data for the reaction coordinate, PMF values and STD (lines 7, 8 and 9) for the un- and reweighted values in the respective scripts. Specify the indexes of the reaction coordinates (lines 15, 18, 21) in both scripts and run these.
+Fill your data for the reaction coordinate, PMF values and STD (under # --- Data ---) for the un- and reweighted values in the respective scripts. Specify the indexes of the reaction coordinates (lines 126, 138, 144) in both scripts and run these.
 
 > python second_der_reweighted.py
 
