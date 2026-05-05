@@ -14,8 +14,9 @@ Modify the (No_)Reweight_1D.sh scripts:
 
 Modify the (no_)reweight.py scripts:
   - set path to call cpptraj (line 16)
-  - Section Calculate distance with cpptraj (line 297)
-      - adapt resid protein to get distance between COM ligand and COM active site 
+  - Section Calculate distance with cpptraj (line 446)
+      - adapt resid protein to get distance between COM ligand and COM active site
+      - modified to only included frames of LiGaMD_prod, ensure length gamd.log is the same as trajectory file 
 
 For each run do: 
 
