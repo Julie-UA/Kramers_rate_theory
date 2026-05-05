@@ -1,0 +1,4 @@
+parm ../../complex.stripped.prmtop
+trajin /home/julie/Desktop/LiGaMD_Prod_tryp_ben/Prod_restraint_E_change_11-1/NPT_prod.nc 15 last 1
+distance COM_LIG_active :225 :171-174,177,191-198,204-206@CA out distances.txt
+run
