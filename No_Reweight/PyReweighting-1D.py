@@ -54,7 +54,6 @@ def main():
         min_data = discX * (int(np.amin(data)/discX) - 1)
         binsX= assignbins([min_data,max_data], discX)  ## Default bin size
 
-
 ##  SET MAX ENERGY FOR ALL INFINITY VALUES
     if args.Emax:
         cb_max=float(args.Emax)
