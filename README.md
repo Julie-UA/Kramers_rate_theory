@@ -1,9 +1,9 @@
 # Kramers' rate theory
 
-Step-by-step desciption to reweight ligand binding kinetics from enhanced sampling molecular dynamics simulations (MD) using Kramers' rate theory. This workflow is applied on the output of LiGaMD simulations on the Trypsin_Benzamidine complex.
+Step-by-step desciption to reweight ligand binding kinetics from enhanced sampling molecular dynamics simulations (MD) using Kramers' rate theory. This workflow is applied on the output of LiGaMD_Dual simulations on the trypsin-benzamidine complex.
 
 ## PMF free energy profiles of the un- and reweighted LiGaMD Simulations 
-A toolkit of python scripts "PyReweighting" is used to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  This script is provided by Miao, Y, et al. https://github.com/MiaoLab20/pyreweighting/tree/main
+A toolkit of python scripts "PyReweighting" is used to facilitate the reweighting of accelerated molecular dynamics (aMD) simulations.  This script is provided by Miao, Y., et al. https://github.com/MiaoLab20/pyreweighting/tree/main. We auto;ated several steps using a shell script:
 
 Modify the (No_)Reweight_1D.sh scripts:
   - path of gamd.log file (line 6)
