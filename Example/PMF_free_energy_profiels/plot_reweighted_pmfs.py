@@ -12,7 +12,7 @@ line_widths = [1.5] * 10
 colors = plt.get_cmap("tab10").colors
 
 for i in range(1, 11):
-    folder = f"Prod_restraint_E_change_11-{i}/Reweigthing_correct"
+    folder = f"Prod_restraint_E_change_11-{i}/Reweigthing"
     file_path = os.path.join(folder, "pmf-c2-tmp.txt.xvg")
 
     if not os.path.isfile(file_path):
