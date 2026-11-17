@@ -84,7 +84,7 @@ Educational tutorial article pending publication.
 It is important to not move cells in the excel file. Doing so will lead to incorrect implementation of the formulas.
 
 
-The trajectory files of the production are avaible upon request due to large size.
+The simulation files are available here: 10.5281/zenodo.24305784.
 
 
 
